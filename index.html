@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtWord</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="icon" href="./assets/image/img01.jpg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f7f5e9]">
+    <section class="px-[5vw] md:h-screen h-full">
+      <nav class="bg-none mb-[1vw]">
+        <div
+          class="w-full flex flex-wrap items-center justify-between mx-auto p-[2vw]"
+        >
+          <a
+            href="./index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <span
+              class="font-prata self-center text-[2vw] font-semibold whitespace-nowrap dark:text-white"
+              >ArtWord</span
+            >
+          </a>
+
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            class="w-[4vw] h-[2vw]"
+            type="button"
+          >
+            <img src="./assets/image/ham.svg" alt="" />
+          </button>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+          >
+            <ul
+              class="py-2 text-sm font-poopins text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Dashboard</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Rahyudiy"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Creator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/gde-ngurah-yudiantara/"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Social Media</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex justify-center items-center">
+        <h1
+          class="font-prata text-[15vw] text-[#f5221b] leading-tight font-thin"
+        >
+          ArtWord
+        </h1>
+      </div>
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        class="w-full border-t-[0.3vw] border-[#ffa09d] pt-[4vw]"
+      >
+        <div
+          class="w-full h-[30vw] bg-cover"
+          style="background-image: url('./assets/image/img01.jpg')"
+        ></div>
+      </div>
+    </section>
+    <section
+      class="px-[5vw] py-[40vw] md:h-screen h-full flex md:flex-row flex-col-reverse gap-[2vw] items-center justify-center"
+    >
+      <div
+        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos="zoom-in"
+        class="flex w-[95%] flex-col gap-[3vw] justify-center items-start"
+      >
+        <h1 class="font-prata md:text-[4.5vw] text-[5vw]">
+          Expand vocabulary with dictionaries
+        </h1>
+        <p class="md:text-[1.2vw] text-[2vw] font-poopins">
+          Expanding vocabulary through the use of dictionaries is an invaluable
+          practice for anyone seeking to enhance their linguistic prowess. By
+          delving into the depths of dictionary entries, individuals can uncover
+          a wealth of new words, each with its own nuanced meanings and usage
+          contexts.
+        </p>
+        <a
+          href="./sub-index.html"
+          class="px-[4vw] text-white md:text-[1.5vw] text-[2.5vw] py-[0.8vw] bg-[#2c2c2c] hover:bg-[#414141] duration-100"
+        >
+          Try now
+        </a>
+      </div>
+      <div
+        data-aos-duration="1000"
+        data-aos-delay="600"
+        data-aos="zoom-in"
+        class="w-full"
+      >
+        <div
+          class="w-full h-[30vw] bg-cover"
+          style="background-image: url('./assets/image/img02.png')"
+        ></div>
+      </div>
+    </section>
+    <script src="./assets/js/api.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

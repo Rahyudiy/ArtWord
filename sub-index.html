@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtWord</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="icon" href="./assets/image/img01.jpg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f7f5e9]">
+    <header class="w-full h-fit p-[2vw] border-b-[0.2vw]">
+      <h1 class="font-bold font-poopins text-[1.2vw]">ArtWord • Dictionary</h1>
+    </header>
+    <main>
+      <nav
+        class="flex items-center font-semibold text-[#808080] font-poopins tracking-tight text-[1.2vw] px-[5vw] py-[2vw]"
+      >
+        <a href="./index.html">← Back</a>
+      </nav>
+      <div class="w-full px-[5vw] flex justify-between md:flex-row flex-col">
+        <div class="src-box flex gap-[1vw] md:flex-row flex-col">
+          <input
+            type="text"
+            id="inp-word"
+            class="md:w-[50vw] w-full font-inter h-[13vw] bg-none tracking-tighter text-[10vw] font-bold border-b-[0.5vw] border-[#757575]"
+          />
+          <div
+            class="flex md:flex-col flex-row justify-between md:text-[2vw] text-[5vw] font-serifM"
+          >
+            <h2 class="italic">(<span id="speech"></span>)</h2>
+            <button id="src-word">Search</button>
+          </div>
+        </div>
+        <div class="flex md:flex-col flex-row items-center justify-between">
+          <div class="hidden md:flex justify-start font-serifM">
+            <div
+              class="border-[#757575] border-r-[0.2vw] pr-[1vw] mr-[1vw] items-center"
+            >
+              <h1 class="text-[1.3vw]">US</h1>
+            </div>
+            <div
+              class="w-fit justify-center gap-[0.5vw] h-fit items-center px-[2vw] py-[0.5vw] rounded-full flex border-[#757575] border-[0.2vw]"
+            >
+              <img
+                src="./assets/image/icon.png"
+                alt="icon"
+                class="md:w-[2vw] md:h-[2vw] w-[10vw] h-[10vw]"
+              />
+              <p id="phonetics" class="md:text-[1.6vw] text-[4vw]"></p>
+            </div>
+          </div>
+          <audio id="audioElement" controls style="display: none"></audio>
+          <div
+            class="flex justify-start md:w-full md:mt-[0vw] mt-[5vw] font-serifM"
+            id="sound"
+            onclick="speakWord()"
+          >
+            <div
+              class="border-[#757575] md:border-r-[0.2vw] pr-[1vw] mr-[1vw] flex items-center"
+            >
+              <h1 class="md:text-[1.3vw] text-[2vw]">US</h1>
+            </div>
+            <div
+              class="w-fit justify-center gap-[0.5vw] h-fit items-center px-[2vw] py-[0.5vw] rounded-full flex md:border-[#757575] border-[0.2vw]"
+            >
+              <img
+                src="./assets/image/sound.png"
+                alt="icon"
+                class="md:w-[2vw] md:h-[2vw] w-[6vw] h-[6vw]"
+              />
+              <p id="phonetic" class="md:text-[1.6vw] text-[3vw]"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[8vw] w-full">
+        <div
+          class="w-full grid-flow-row md:grid flex flex-col grid-cols-5 h-full md:px-0 md:gap-y-[0vw] px-[3vw]"
+          id="details"
+        ></div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/api.js"></script>
+  </body>
+</html>
