@@ -1,6 +1,6 @@
 # Orange
 
-<img src="assets/img/img01.jpg" alt="flower" width="200" height="150">
+<img src="assets/image/img01.jpg" alt="flower" width="200" height="150">
 
 Repository: ArtWord
 
